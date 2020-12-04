@@ -92,11 +92,11 @@ bool Game::start()
 	//Initialize shader
 	m_shader.loadShader(
 		aie::eShaderStage::VERTEX,
-		"phong.vert"
+		"pong.vert"
 	);
 	m_shader.loadShader(
 		aie::eShaderStage::FRAGMENT,
-		"phong.frag"
+		"pong.frag"
 	);
 	if (!m_shader.link()) {
 		printf(

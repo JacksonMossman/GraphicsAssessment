@@ -68,14 +68,14 @@ private:
 	void calculateTangents(std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices);
 
 	struct MeshChunk {
-		unsigned int	vao, vbo, ibo;
+		unsigned int	vao, vbo, ibo; 
 		unsigned int	indexCount;
 		int				materialID;
 	};
 
-	std::string				m_filename;
-	std::vector<MeshChunk>	m_meshChunks;
-	std::vector<Material>	m_materials;
+	std::string				m_filename;//!< this Objects file name
+	std::vector<MeshChunk>	m_meshChunks;//!< MeshChunks
+	std::vector<Material>	m_materials; //!< This Objects material
 };
 
 } // namespace aie
